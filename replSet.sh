@@ -1,0 +1,1 @@
+docker exec mongo_primary mongo --eval 'rs.initiate({_id : "rs0", members: [{ _id:0,host:"<Primary_Address>:<Primary_Port>" },{ _id:1,host:"<Secondary_Address>:<Secondary_Port>" }, { _id:2,host:"<Secondary_Address>:<Secondary_Port>" }]})'
